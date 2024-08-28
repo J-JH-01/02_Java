@@ -45,7 +45,7 @@ public class VariableExample1 {
 		
 		
 		
-		// char 는 그냥
+		// char 는 홑따옴표
 		// String의 변수는 쌍따옴표
 		// 자바는 정수와 실수부가 다르다
 		// 스트링은 참조형 변수라 성질이 조금 다르다

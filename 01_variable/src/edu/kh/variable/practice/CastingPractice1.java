@@ -22,5 +22,7 @@ public class CastingPractice1 {
 		System.out.println( (int)ch ); // 65
 		System.out.println( (int)ch+iNum1 ); // 75
 		System.out.println( (char)(ch+iNum1) ); // 'K'
+		
+		System.out.println("2024.08.28 수업내용");
 	}
 }
