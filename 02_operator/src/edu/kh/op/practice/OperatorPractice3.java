@@ -20,12 +20,13 @@ public class OperatorPractice3 {
 		int a = sc.nextInt();
 		
 		int q = a > 50000 ? a / 50000 : 0;
-		a -= 50000*q;
+		q %= 50000;
 		int w = a > 10000 ? a / 10000 : 0;
-		a -= 10000*w;
+		q %= 10000;
 		int e = a > 5000 ? a / 5000 : 0;
-		a -= 5000*e;
+		q %= 5000;
 		int r = a > 1000 ? a / 1000 : 0;
+		
 		System.out.printf("50000원 : %d",q);
 		System.out.println();
 		System.out.printf("10000원 : %d",w);
