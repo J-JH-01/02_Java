@@ -1,0 +1,8 @@
+package edu.kh.basic;
+
+// 한 줄 주석 : 컴파일러가 해석하지 않는 부분,개발자가 확인하기 위한 메모
+/* 두 줄 주석 */
+
+public class JavaBasic {
+
+}

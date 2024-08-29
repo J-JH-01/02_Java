@@ -1,0 +1,24 @@
+package edu.kh.op.ex;
+
+public class ExampleRun { //코드 실행용 클래스로 만든것
+
+	//메인메서드 필수 작성
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// OpExample 생성
+		// -> OpExample이라는 클래스(설계도)를 이용해서 객체를 생성하는데, 그 객체 이름이 ex다.
+		OpExample ex = new OpExample(); // opexample을 담을 상자를 만드는데, 담아야하니까 형식도 opexample 이여야한다
+		//패키지가 같아서 임포트가 안같아도 된다
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

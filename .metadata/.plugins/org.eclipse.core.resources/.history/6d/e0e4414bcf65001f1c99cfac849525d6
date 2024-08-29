@@ -1,0 +1,11 @@
+package edu.kh.op.practice;
+
+import java.util.Scanner;
+
+public class OperatorPractice3 {
+	Scanner sc = Scanner(System.in);
+	public void practice1() {
+		
+	}
+	
+}

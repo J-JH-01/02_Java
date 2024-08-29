@@ -1,0 +1,38 @@
+package edu.kh.cariable.ex2;
+
+
+public class ScannerExample {
+
+	public static void main(String[] args) {
+		
+		// Scanner : 프로그램 실행 중 키보드 입력을 받을 수 있게하는 역할
+		
+		// Scanner 생성
+		// -> 프로그램 안에 스캐너라는 기계를 만드는 것
+		
+		Scanner sc = new Scaaner(System.in);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

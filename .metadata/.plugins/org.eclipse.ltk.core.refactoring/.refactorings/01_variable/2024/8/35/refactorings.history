@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;edu.kh.cariable.ex2&apos; to &apos;edu.kh.variable.ex2&apos;&#x0D;&#x0A;- Original project: &apos;01_variable&apos;&#x0D;&#x0A;- Original element: &apos;01_variable/src/edu.kh.cariable.ex2&apos;&#x0D;&#x0A;- Renamed element: &apos;01_variable/src/edu.kh.variable.ex2&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;edu.kh.cariable.ex2&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;edu.kh.cariable.ex2" name="edu.kh.variable.ex2" qualified="false" references="true" stamp="1724898355354" textual="false" version="1.0"/>
+</session>
