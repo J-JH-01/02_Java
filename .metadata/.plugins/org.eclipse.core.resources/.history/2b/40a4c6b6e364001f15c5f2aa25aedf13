@@ -1,8 +1,0 @@
-package edu.kh.basic;
-
-// 한 줄 주석 : 컴파일러가 해석하지 않는 부붑ㄴ
-/* 두 줄 주석 */
-
-public class JavaBasic {
-
-}

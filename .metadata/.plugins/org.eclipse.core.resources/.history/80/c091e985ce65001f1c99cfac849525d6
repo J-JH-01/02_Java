@@ -1,9 +1,0 @@
-package edu.kh.op.practice;
-
-public class OperatorPractice3 {
-	Scaaner sc = Scanner(System.In);
-	public void practice1() {
-		
-	}
-	
-}

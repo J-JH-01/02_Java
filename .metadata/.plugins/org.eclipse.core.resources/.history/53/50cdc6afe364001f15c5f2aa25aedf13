@@ -1,8 +1,0 @@
-package edu.kh.basic;
-
-// 한 줄 주석
-/* 두 줄 주석*/
-
-public class JavaBasic {
-
-}
