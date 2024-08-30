@@ -18,6 +18,7 @@ public class OperatorPractice {
 
 	}
 
+	
 	public void practice2(){
 		
 	System.out.print("이름 : ");
@@ -29,7 +30,11 @@ public class OperatorPractice {
 	System.out.print("번호 : ");
 	int d= sc.nextInt();
 	System.out.print("성별(남학생/여학생) : ");
-	String e = sc.next();
+	sc.nextLine();
+	String e = sc.nextLine(); 
+	// nextLine을 쓸 경우에는 입력버퍼를 한번 비우고 새로 시작해야하기 때문에
+	// 안그러면 개행문자가 먼저 나가버려서 출력때 꼬여버림 
+	// 굳이 쓰고싶다하면 sc.nextLine();을 단일로 한줄 쓰고 시작해서 입력버퍼를 비워야함
 	System.out.print("성적 : ");
 	float f = sc.nextFloat();
 	
