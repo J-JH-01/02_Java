@@ -3,7 +3,7 @@ package edu.kh.oop.abstraction.model.service;
 import edu.kh.oop.abstraction.model.vo.People;
 
 // Service : 특정 기능(비즈니스 로직)을 제공하는 클래스
-public class AbstractionServise {
+public class AbstractionService {
 
 	public void ex1() {
 		// people 이라는 클래스를 이용해서 국민 객체 만들기
