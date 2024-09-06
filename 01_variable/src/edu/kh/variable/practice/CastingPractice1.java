@@ -18,7 +18,7 @@ public class CastingPractice1 {
 		
 		System.out.println( iNum1/(double)iNum2 ); // 2.5
 		
-		System.out.println( dNum ); // 2.5
+		System.out.println( (int)dNum ); // 2.5
 		
 		System.out.println( (int)fNum ); // 3
 		

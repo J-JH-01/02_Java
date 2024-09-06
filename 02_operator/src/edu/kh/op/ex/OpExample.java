@@ -100,7 +100,7 @@ public class OpExample { // 예제 코드 작성용 클래스
 	String str = input1 >= 0 ? "양수입니다" : "음수입니다";
 	System.out.println(str);	
 		
-		
+	
 	}
 	
 }

@@ -44,6 +44,12 @@ public class VariableExample1 {
 		System.out.println(4 * pi * r * r ); //구의 겉넓이
 		
 		
+		int k = 9;
+		for(int i=1 ; i <=9 ; i++) {
+			int x = k*i;
+			System.out.printf("%d,%d,%d\n",k,i,x);
+		}
+		
 		
 		// char 는 홑따옴표
 		// String의 변수는 쌍따옴표
