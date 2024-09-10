@@ -75,7 +75,8 @@ public class MemberService {
 				case -1 : System.out.println("로그인을 해주세요"); break;
 				case 0 : System.out.println("비밀번호가 일치하지 않습니다"); break;
 				case 1 : System.out.println("정보가 수정되었습니다"); break;
-				}break;
+				}
+				break;
 
 			case 5:
 				/* 지역검색 */
@@ -228,7 +229,12 @@ public class MemberService {
 			return "로그인을 해주세요";
 		}
 		else { 
-			return "이름 : " + loginMember.getMemberName() +"\n아이디 : "+loginMember.getMemberId() + "\n나이 : " + loginMember.getMemberAge() + "\n지역 : " + loginMember.getRegion();	
+			String str = "이름 : " + loginMember.getMemberName();
+			str += "\n아이디 : "+loginMember.getMemberId();
+			str += "\n나이 : " + loginMember.getMemberAge();
+			str += "\n지역 : " + loginMember.getRegion();	
+		
+			return str;
 		}
 		//2) 로그인이 되어있는 경우
 		// 현재 로그인한 회원의 정보를 출력할 문자열을 만들어 반환
