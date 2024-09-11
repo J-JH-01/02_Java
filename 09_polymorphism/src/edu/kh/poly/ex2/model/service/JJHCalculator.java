@@ -1,0 +1,38 @@
+package edu.kh.poly.ex2.model.service;
+
+public class JJHCalculator implements Calculator{
+	// extends : 확장하다, implements : 구현하다( 여러개 상속해주고싶으면 인터1,인터2 이런식으로 임플레멘츠 옆에 쓰면됨)
+	// (부)클래스 - (자)클래스 : extends 사용 (추상클래스포함)
+	// (부)인터페이스 - (자)인터페이스 : extends 
+	// (부)인터페이스 - (자) 인터페이스 : implements
+	// (부)클래스 - (자)인터페이스 - 상속불가
+	// 외울 필요까진 없다 일반적인 경우만 외워도 ㄱㅊ
+	
+	// 추상클래스 : 공통적인 동작과(일반메서드, 일반필드)를 공유하면서 일부 동작만 다르게 구현하고자 할 때 사용
+	// 인터페이스 : 같은 메서드를 강제구현하면서 다른동작만을 구현하고자 할 때 사용
+	
+	
+
+	
+	@Override
+	public int plus(int num1, int num2) {
+		return num1+num2;
+	}
+
+	@Override
+	public int minus(int num1, int num2) {
+		return num1-num2;
+	}
+
+	@Override
+	public int multiple(int num1, int num2) {
+		return num1*num2;
+	}
+
+	@Override
+	public int devide(int num1, int num2) {
+		return num1/num2;
+	}
+// 처음에러는 너 무조건 오버라이딩해서 구현하라는 것
+	
+}
