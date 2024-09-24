@@ -99,7 +99,7 @@ public class MapService {
 		Set<String> set = map.keySet(); // id,pw,age가 저장된 Set 반환
 		System.out.println("keySet() : "+ set);
 		
-		//향상된 for 문
+		//향상된 for 
 		for(String key : set)System.out.println(map.get(key));
 		
 		// map에 저장된 데이터가 많거나
