@@ -1,0 +1,123 @@
+package edu.kh.network.client.model.service;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.net.UnknownHostException;
+import java.util.Scanner;
+
+public class ClinetService {
+
+	public void clientStart() {
+		
+		
+//		1)서버의 IP주소와 서버가 정한 포트번호를 매개변수로 하여 클라이언트용 소켓 객체 생성
+		// 클라이언트용 소켓 객체 생성
+		
+		
+		// 서버 IP 주소 : 192.168.50.241
+		// -> 다른 컴퓨터가 서버일떈 그 컴퓨터 IP 주소 작성하면 됩니다
+		//String serverIP = "198.168.50.241"
+		
+		//String serverIP = InetAddress.getLocalHost().getHostAddress();
+		// 1) 현재 컴퓨터의 로컬 IP 주소 얻어오는 방법 , 로컬호스트 = 내 컴퓨터
+		
+		String serverIP = "127.0.0.1";		
+		// 2) loop back IP(현재 컴퓨터를 나타내는 IP)
+		// 127.0.0.1 은 고정임 쉬워보여서 이걸 자주 사용하시나봄
+		
+		
+		int port = 8500;
+		
+		Socket clientSocket = null;
+		
+		InputStream is = null;
+		OutputStream os = null;
+		
+		BufferedReader br = null;
+		PrintWriter pw = null;
+		
+		try {
+			System.out.println("[Client]");
+			
+			clientSocket = new Socket(serverIP , port); // 서버컴의 IP와 port 둘 다 알아야함
+			// UnknownHostException : IP가 잘못되었을 때 발생하는 예외
+			
+			
+//		2)서버와의 입출력 스트림 오픈
+			if(clientSocket != null) { // 서버와 연결이 성공한 경우
+				
+				is = clientSocket.getInputStream();
+				os = clientSocket.getOutputStream();
+				
+				
+			}
+			
+			
+//		3)보조 스트림을 통해 성능 개선
+		br = new BufferedReader (new InputStreamReader(is));
+		// InputStreamReader : 바이트를 문자 단위로 입력하는 문자 변환 보조 스트림
+		
+		pw = new PrintWriter(os);
+			
+			
+//		4)스트림을 통해 읽고 쓰기
+		
+		String serverMessage = br.readLine();
+		// 서버 -> 클라이언트에게 보낸 메세지를 한 줄 읽어와
+		
+		System.out.println(serverMessage);
+		// 콘솔창에 출력 
+		
+		// ------------------------------------------------------------------------
+		
+		// 클라이언트 -> 서버로 메세지 전송
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.println("서버로 전달할 메세지");
+		String str = sc.nextLine();
+		
+		pw.println(str); // 메세지를 클라이언트 -> 서버쪽으로 출력
+		pw.flush(); // 스트림 내용 밀어내기
+		
+		// -----------------------------------------------------------------
+		// 서버 -> 클라이언트 메세지 읽어오기	
+		System.out.println("서버가 보낸 메세지 : " + br.readLine());
+		
+		} catch(UnknownHostException e){
+			System.out.println("잘못된 IP 주소입니다");
+		} 
+		catch (Exception e) {
+			
+		}finally {
+			// 5) 통신 종료
+			
+			
+			try {
+				System.out.println("[Client]");
+				// 스트림/소켓 닫기 
+				
+				// 이 구문 꼭 있어야함!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+				// 중요!
+				
+				if(br != null) br.close();
+				if(pw != null) pw.close();
+				
+				if(clientSocket != null) clientSocket.close();
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
+		
+		
+		
+		
+		
+
+	}
+}
