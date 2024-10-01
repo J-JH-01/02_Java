@@ -297,15 +297,7 @@ public class BookService {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	// 겟/셋
 	public List<Book> getNormalList() {
