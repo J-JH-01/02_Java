@@ -5,7 +5,12 @@ import project.toy.service.GameService;
 public class GameRun {
 
 	public static void main(String[] args) {
-		new GameService().displayMenu();
+		try {
+			new GameService().displayMenu();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 
 	}
